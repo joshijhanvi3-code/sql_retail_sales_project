@@ -11,7 +11,7 @@ create table retail_sales
        price_per_unit FLOAT,
        cogs	FLOAT,
        total_sale FLOAT
-)
+);
 
 SELECT * FROM retail_sales
 limit 100;
@@ -147,7 +147,7 @@ limit 5;
 SELECT category,COUNT(DISTINCT customer_id) as unique_customers
 from retail_sales
 GROUP BY category;
-;
+
 
 -- Q.10 Write a SQL query to create each shift and number of orders (Example Morning <=12, Afternoon Between 12 & 17, Evening >17)
 
@@ -166,8 +166,8 @@ SELECT
 	shift,
 	count(*) as total_orders 
 from hourly_sale
-GROUP BY shift
-
+GROUP BY shift;
 
 
 -- END of project 
+
